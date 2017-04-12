@@ -49,6 +49,10 @@ nav li {
   margin: 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .banner {
   margin-right: -2rem;
 }
@@ -60,6 +64,7 @@ header h2 {
   background-color: white;
   padding: 1.5rem 5rem;
   margin-top: 10rem;
+  text-transform: uppercase;
 }
 
 .container {
@@ -103,7 +108,7 @@ header h2 {
 
 .infobox {
   width: 35%;
-  margin: 2.5%;
+  margin-right: 5%;
 }
 
 .infobox h4 {
@@ -176,4 +181,79 @@ p {
     width: 100%;
   }
 
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 17rem;
+  }
+  header h1 {
+    display: none;
+  }
+
+  nav li {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+
+  .banner {
+    width: 100%;
+    margin: 0;
+  }
+
+  header h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 9rem;
+  }
+
+  .services .containerh {
+    flex-direction: column;
+  }
+
+  .item h3 {
+    font-size: 0.77rem;
+  }
+
+  .item {
+    margin: 0.77rem;
+    height: auto;
+  }
+
+  .services {
+    margin: 3rem;
+  }
+
+  .info .containerh {
+    flex-direction: column;
+  }
+
+  .infobox {
+    width: 100%;
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+  }
+
+  .infobox h4 {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer .containerh {
+    justify-content: center;
+  }
+
+  footer h5 {
+    display: none;
+  }
+
+  footer img{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
